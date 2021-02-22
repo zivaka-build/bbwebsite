@@ -1,0 +1,377 @@
+#navbarsExample07
+{
+    font-size: 20px;
+}
+
+.nav-item
+{
+    color: rgb(0,0,0);
+    font-size: 20px;
+}
+
+#navbarNav
+{
+    font-family: 'Oswald', sans-serif;
+}
+/*********************************Landing-Page***************************************/
+
+#Home-page
+{
+    margin-top:50px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.vege-logo1
+{
+    width:115%;
+    height:100%;
+}
+
+
+#Great-food
+{
+    width:75%;
+    height:50%;
+    margin-left: 20%;
+    box-sizing: border-box;
+    margin-top:40px;
+}
+
+#p-landing
+{
+    font-size: 25px;
+    text-align: right;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Oi', cursive;
+}
+.row2
+{
+    text-align: center;
+}
+
+#google-play
+{
+    width: 90%;
+    height: 90%;
+}
+
+#app
+{
+    margin-top:5%;
+    width:85%;
+    height:60%
+}
+
+#download-box
+{
+    padding-top: 2%;
+}
+
+#BBD-logo
+    {
+        width:100%;
+        height: 25%;
+        margin-top: 50px;
+    }
+/****************************       ABOUT US     *********************************/
+
+#About-us
+{
+    padding-top: 5%;
+}
+#about-p
+{
+    font-size: 25px;
+    padding-top: 11%;
+    padding-right: 10%;
+    font-family: 'Lobster Two', cursive;
+}
+
+#plate-logo1
+{
+    width:100%;
+    height:90%;
+}
+
+#about-img
+{
+    width:90%;
+}
+
+#about-logo
+{
+    padding: 0px;
+}
+.cont
+{
+    padding: 0px;
+}
+
+/*******************************BBD Features******************************************/
+
+#BBDFeatures-heading
+{
+    margin:5%;
+    text-align: center;
+    font-family: 'Arvo', serif,bold,10px;
+    color:#00A6E4
+
+}
+
+.special-skill-item
+{
+    border: 5px solid #00A6E4;
+}
+
+.Product-list
+{
+    border: 5px  solid #00A6E4;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: none;
+    margin: 10px;
+}
+
+#Features-Breakfast
+{
+    padding-top: 5%;
+}
+
+.carousel-inner
+{
+    height:400px;
+}
+
+.carousel-img
+{
+    position: absolute;
+    height:400px;
+}
+/***************************************Why Us**************************************/
+
+#Why-us2
+{
+    text-align: right;
+}
+
+#why-us-cont
+{
+    margin:5%;
+    border-radius: 15px;
+    margin-top: -30%;
+    background-color: RGBA(0,166,228,0.4);
+}
+
+#why-us-img
+{
+    width:40%;
+    height:60%;
+}
+
+.why-us
+{
+    margin:10%;
+    font-size: 25px;
+    font-family: 'Oi', cursive;
+}
+
+#why-us-head
+{
+    margin: 15% 10% 15% 0%;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+#Breakfast-why-us
+{
+    margin-top: 200px;
+    font-size: 25px;
+    margin: 73% 10% 10% 10%;
+    font-family: 'Oi', cursive;
+}
+
+#Schedule-why-us
+{
+    margin-top:15%;
+}
+
+strong
+{
+  color: aliceblue;
+}
+
+h6{
+    text-align: center;
+    margin-top:20px;
+    color: aqua;
+    font-size: 25px;
+}
+
+#product
+{
+    margin-top: 0px;
+}
+
+#Why-us
+{
+    padding-top: 5%;
+}
+
+
+
+/*************************---------------Footer---------------****************************/
+.container-footer
+{
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    align-content: center;
+    background-color: #9D9D9F;
+}  
+
+footer
+{
+   margin-top: 20px;
+}
+
+#footer-row
+{
+    padding: 30px;
+}
+
+#footer-img
+{
+    width:40%;
+    height:40%;
+}
+
+#fdown-img1
+{
+    width:100px;
+    height:50px;
+}
+
+#fdown-img2
+{
+    width:100px;
+    height:32px;
+}
+
+#footer-mid
+{
+    text-align: center;
+}
+
+#links
+{
+    text-align: right;
+}
+
+.container-footer
+{
+    border-top: #9D9D9F;
+    border-radius:10px;
+}
+
+
+/*******************Media queries********************************/
+
+@media (max-width:576px)
+{
+    #p-landing
+    {
+        font-size: 15px;
+        padding-right:5px;
+    }
+
+    #about-p
+    {
+        font-size: 15px;
+    }
+
+    .why-us
+    {
+        font-size: 15px;
+    }
+
+    #fdown-img1
+   {
+    width:50px;
+    height:25px;
+   }
+   #fdown-img2
+   {
+    width:50px;
+    height:17px;
+   }
+    
+   .vege-logo1
+   {
+    width:120%;
+    height:110%;
+    }
+    
+    #google-play
+    {
+    width: 110%;
+    height: 110%;
+    }
+
+    #app
+    {
+    margin-top:5%;
+    width:110%;
+    height:75%
+    }
+
+    .carousel-inner
+    {
+    height:300px;
+    }
+
+    .carousel-img
+    {
+    position: absolute;
+    height:300px;
+     }
+
+}
+@media (min-width:992px)
+{
+    #app
+    {
+       margin-top: 5%;
+    }
+}
+@media (max-width:990px)
+{
+    #app
+    {
+       margin-top: 6%;
+    }
+}
+
+@media (max-width:700px)
+{
+
+
+    #product
+    {
+        font-size: 20px;
+    }
+
+    .why-us, #Breakfast-why-us
+    {
+        font-size: 18px;
+    }
+
+    #why-us-head
+    {
+        font-size: 22px;
+    }
+}

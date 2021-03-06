@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+.panel{
+
+    position: absolute;
+    width: 1440px;
+    height: 957px;
+    left: -1px;
+    top: 1066px;
+
+    background: #090909;
+
+}
+
+.bb-green{
+    background: #92ED98;
+}
+
+
+.bb-nav{
+font-family: Alatsi;
+font-style: normal;
+font-weight: 100;
+font-size: 1.4rem;
+line-height: 2.1rem;
+display: flex;
+align-items: center;
+
+color: #460B6F !important;
+}
+
+.logo-img{
+    width:75px;
+    font-family: 'Alatsi', sans-serif !important;
+    font-style: normal;
+    font-weight:300;
+    font-size: 1.8rem;
+    align-items: center;
+}
+
+.bb-home{
+    /* Ellipse 14 */
+
+
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    display: inline-block;
+    background: #A499D9;
+}

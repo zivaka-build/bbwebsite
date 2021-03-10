@@ -11,7 +11,7 @@
 
 #navbarNav
 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 /*********************************Landing-Page***************************************/
 
@@ -26,50 +26,14 @@
 {
     width:115%;
     height:100%;
-    z-index: -1;
 }
 
 
 #Great-food
 {
-    position: absolute;
-    height:80%;
-    left: 1150px;
-    box-sizing: border-box;
-    margin-top:40px;
-}
-#Great-food-2
-{
-    position: absolute;
-    top: 290px;
-    left: 900px;
-    box-sizing: border-box;
-    margin-top:40px;
-}
-#Great-food-3
-{
-    position: absolute;
-    width: 30%;
-    top: 360px;
-    left: 1040px;
-    box-sizing: border-box;
-    margin-top:40px;
-}
-#Great-food-4
-{
-    position: absolute;
-    width: 28%;
-    top: 410px;
-    left: 1070px;
-    box-sizing: border-box;
-    margin-top:40px;
-}
-#Great-food-5
-{
-    position: absolute;
-    width: 28%;
-    top: 750px;
-    left: 1030px;
+    width:75%;
+    height:50%;
+    margin-left: 20%;
     box-sizing: border-box;
     margin-top:40px;
 }
@@ -103,97 +67,28 @@
 
 #download-box
 {
-   position: absolute;
-    left: 25%;
-    
-    top: 870px;
+    padding-top: 2%;
 }
-#Wood
-{
-    width: 100%;
-   z-index: 3;
-}
-
 
 #BBD-logo
     {
-        position: absolute;
-       left: 900px;
-       bottom: 350px;
+        width:100%;
+        height: 25%;
+        margin-top: 50px;
     }
-    #BBD-logo-2
-    {
-        margin-top: 10%;
-        width: 100%;
-        height: 50%;
-        margin-bottom: 45%;
-
-    }
-    #BBD-logo-3
-    {
-        width: 30%;
-        position: absolute;
-    margin-top: 30%;
- left: 90px;
-
-   
-    }
-    #BBD-logo-4
-    {
-        position: absolute;
-        width: 60%;
-
- right: 55%;
-
-   z-index: -1;
-
-    }
-
-
 /****************************       ABOUT US     *********************************/
 
-#about
+#About-us
 {
-    position: absolute;
-    top: 1190px;
-    left: 700px;
-    z-index: 2;
-}
-#about-2
-{
- width: 45%;
- position: absolute;
-    top: 1290px;
-    left: 500px;
-    z-index: 1;
-    
-}
-#about-bb
-{
-    width: 35%;
- position: absolute;
-    top: 1300px;
-    left: 500px;
-    z-index: 4;
+    padding-top: 5%;
 }
 #about-p
 {
-    width: 30%;
-    position: absolute;
-       top: 1400px;
-       left: 850px;
-       z-index: 4;
+    font-size: 25px;
+    padding-top: 11%;
+    padding-right: 10%;
+    font-family: 'Lobster Two', cursive;
 }
-#about-orange
-{
-    width: 30%;
-    position: absolute;
-       top: 1600px;
-       left: 450px;
-       z-index: 4;
-}
-
-
 
 #plate-logo1
 {
@@ -215,7 +110,7 @@
     padding: 0px;
 }
 
-/*******************************BBD Features
+/*******************************BBD Features******************************************/
 
 #BBDFeatures-heading
 {
@@ -256,59 +151,7 @@
     height:400px;
 }
 /***************************************Why Us**************************************/
-#text
-{
-    font-family: Alatsi;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 46px;
-letter-spacing: 0em;
-text-align: center;
 
-}
-#green
-{
-    
-        width: 180px;
-        height: 180px;
-        background: #A2EC8E;
-        -moz-border-radius: 70px; 
-        -webkit-border-radius: 70px; 
-        border-radius: 50%;
-        margin-top: 50%;
-    
-        
-}
-#purple
-{
-    width: 180px;
-    height: 180px;
-    background: #C5BAFA;
-   -moz-border-radius: 70px; 
-    -webkit-border-radius: 70px; 
-    border-radius: 50%;
-    margin-top: 50%;
-}
-#packaged
-{
-  
-}
-#peaches
-{
-    width: 350%;
-   padding-right: 50%;
-}
-#vegan
-{
-    width: 5%;
-    padding-right: 50%;
-}
-#organic
-{
-   
-    padding-right: 50%;
-}
 #Why-us2
 {
     text-align: right;
@@ -316,8 +159,6 @@ text-align: center;
 
 #why-us-cont
 {
-    margin:5%;
-    border-radius: 15px;
     margin-top: -30%;
     background-color: RGBA(0,166,228,0.4);
 }
@@ -330,6 +171,7 @@ text-align: center;
 
 .why-us
 {
+    margin-top: 15px;
     margin:10%;
     font-size: 25px;
     font-family: 'Oi', cursive;
@@ -341,7 +183,7 @@ text-align: center;
     text-align: center;
     padding-right: 0px;
     font-size: 30px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Oi', cursive;
 }
 
 #Breakfast-why-us
@@ -349,7 +191,7 @@ text-align: center;
     margin-top: 200px;
     font-size: 25px;
     margin: 73% 10% 10% 10%;
-    font-family: 'Oi', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 #Schedule-why-us
@@ -371,7 +213,8 @@ h6{
 
 #product
 {
-    margin-top: 0px;
+    margin-top: 27%;
+
 }
 
 #Why-us
@@ -384,16 +227,14 @@ h6{
 /*************************---------------Footer---------------****************************/
 .container-footer
 {
-    margin:10%;
-    margin-top: 5%;
     margin-bottom: 0px;
     align-content: center;
-    background-color: #9D9D9F;
+    background-color: #fff;
 }  
 
 footer
 {
-   margin-top: 20px;
+    background-image: url('wood.jpg');
 }
 
 #footer-row
@@ -431,7 +272,7 @@ footer
 
 .container-footer
 {
-    border-top: #9D9D9F;
+    border-top: #fff;
     border-radius:10px;
 }
 

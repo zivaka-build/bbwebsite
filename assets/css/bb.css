@@ -298,3 +298,23 @@ footer .form-control {
     color: #fff;
     padding: 0.7em 1em;
 }
+
+.tnc-padding {
+    margin-top: 150px;
+    margin-bottom: 101px;
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+    .tnc-padding {
+        margin-top: 150px;
+        margin-bottom: 210px;
+    }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+    .tnc-padding {
+        margin-top: 300px;
+        margin-bottom: 648px;
+    }
+}
+

@@ -67,8 +67,8 @@
                 
                 
                 <div  style="position: absolute; top: 470px;" class="col-lg-12 d-none d-lg-block d-xl-block text-right ">
-                    <img src="./assets/img/app store.png" width="260px"/>
-                    <a href="https://play.google.com/store/apps/details?id=com.breakfastbuddy"><img src="./assets/img/google play.png" width="280px"/></a>
+                    <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="260px"/></button>
+                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="280px"/></button>
                 </div>
                 
                
@@ -79,8 +79,8 @@
                 
                 
                 <div  style="position: absolute; top: 290px;" class="col-lg-12 text-right ">
-                    <img src="./assets/img/app store.png" width="180px"/>
-                    <a href="https://play.google.com/store/apps/details?id=com.breakfastbuddy"><img src="./assets/img/google play.png" width="200px"/></a>
+                    <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="180px"/></button>
+                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="200px"/></a></button>
                 </div>
                 
                
@@ -89,14 +89,46 @@
             <div class="container-fluid d-block d-sm-none px-0 pt-0" >
                 <img class="section1" src="./assets/img/section1.png" />
                 <div class="col-12 text-center">
-                    <img src="./assets/img/app store.png" width="200px"/>
+                    <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="200px"/></button>
                     
                 </div>
                 <div class="col-12 text-center">
-                <a href="https://play.google.com/store/apps/details?id=com.breakfastbuddy"><img src="./assets/img/google play.png" width="210px"/></a>
+                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="210px"/></a></button>
                 </div>
             </div>
 
+
+        </section>
+        <section class="app-link-playstore pt-3 mt-4" id="app-link-playstore" style="background-color: #460B6F; display: none;" >
+            <div class="row container-fluid  pt-3 pb-3">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-2 text-center text-lg-right" style="color: #fff">
+                    <h3 class="card-title">Send App Link</h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="form-group">
+                        <input type="number" class="form-control app-input" id="mobile2" placeholder="Phone" >
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center text-lg-left">
+                    <button type="button" class="btn btn-info" onclick="sendLinkPlaystore();">Send</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="app-link-ios pt-3 mt-4" id="app-link-ios" style="background-color: #460B6F; display: none;" >
+            <div class="row container-fluid  pt-3 pb-3">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-2 text-center text-lg-right" style="color: #fff">
+                    <h3 class="card-title">Send App Link</h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                    <div class="form-group">
+                        <input type="number" class="form-control app-input" id="mobile1" placeholder="Phone" >
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center text-lg-left">
+                    <button type="button" class="btn btn-info" onclick="sendLinkIos();">Send</button>
+                </div>
+            </div>
 
         </section>
 
@@ -300,6 +332,79 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        function showPlaystore() { 
+         var appLinkPlaystore= document.querySelector("#app-link-playstore");
+         appLinkPlaystore.style.display= "block";
+
+         var appLinkIos= document.querySelector("#app-link-ios");
+         appLinkIos.style.display= "none"; 
+        }
+
+        function showIos(){
+         var appLinkIos= document.querySelector("#app-link-ios");
+         appLinkIos.style.display= "block";  
+
+         var appLinkPlaystore= document.querySelector("#app-link-playstore");
+         appLinkPlaystore.style.display= "none";
+         
+        }
+
+        function sendLinkIos(){
+            const mobile1 = document.querySelector('#mobile1');
+            const mobile = mobile1.value * 1;
+
+            fetch("https://bb-api.zivaka.com/api/v1.0/support/sendapplink",{ 
+      
+            // Adding method type 
+            method: "POST", 
+        
+            // Adding body or contents to send 
+            body: JSON.stringify({ 
+            mobileNo : mobile,
+            type : "ios"
+            }), 
+        
+            // Adding headers to the request 
+            headers: { 
+            "Content-type": "application/json; charset=UTF-8"
+                } 
+            })
+  
+            .then(response => response.json())
+
+            .then(json => { 
+            console.log(json)
+            })
+        }
+        function sendLinkPlaystore(){
+            const mobile2 = document.querySelector('#mobile2');
+            const mobile = mobile2.value * 1;
+
+            fetch("https://bb-api.zivaka.com/api/v1.0/support/sendapplink",{ 
+      
+            // Adding method type 
+            method: "POST", 
+        
+            // Adding body or contents to send 
+            body: JSON.stringify({ 
+            mobileNo : mobile,
+            type : "play"
+            }), 
+        
+            // Adding headers to the request 
+            headers: { 
+            "Content-type": "application/json; charset=UTF-8"
+                } 
+            })
+  
+            .then(response => response.json())
+
+            .then(json => { 
+            console.log(json)
+            })
+        }
     </script>
 
    

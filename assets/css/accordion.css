@@ -44,3 +44,9 @@
   padding: 15px;
   margin-top: 5px;
 }
+
+.app-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

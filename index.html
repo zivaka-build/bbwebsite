@@ -110,7 +110,7 @@
                       </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 text-center text-lg-left">
-                    <button type="button" class="btn btn-info" onclick="sendLinkPlaystore();">Send</button>
+                    <button type="button" class="btn btn-info" onclick="sendLinkPlaystore();" data-toggle="modal" data-target="#exampleModal">Send</button>
                 </div>
             </div>
 
@@ -126,11 +126,27 @@
                       </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 text-center text-lg-left">
-                    <button type="button" class="btn btn-info" onclick="sendLinkIos();">Send</button>
+                    <button type="button" class="btn btn-info" onclick="sendLinkIos();" data-toggle="modal" data-target="#exampleModal">Send</button>
                 </div>
             </div>
 
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Success !</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            App link successfully sent to mobile.
+            </div>
+            </div>
+            </div>
+        </div>
 
         <section data-aos="fade-up"
         data-aos-duration="1500" class="custom-padding" id="HowItWorks">
@@ -376,7 +392,12 @@
 
             .then(json => { 
             console.log(json)
+           
+            
             })
+            var appLinkIos= document.querySelector("#app-link-ios");
+            appLinkIos.style.display= "none";
+            document.querySelector('#mobile1').value = null;
         }
         function sendLinkPlaystore(){
             const mobile2 = document.querySelector('#mobile2');
@@ -403,7 +424,12 @@
 
             .then(json => { 
             console.log(json)
+           
             })
+            var appLinkPlaystore= document.querySelector("#app-link-playstore");
+            appLinkPlaystore.style.display= "none";
+            document.querySelector('#mobile2').value = null;
+            
         }
     </script>
 

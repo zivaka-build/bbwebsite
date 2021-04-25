@@ -296,6 +296,15 @@ footer .form-control {
     padding: 0.7em 1em;
 }
 
+.bb-video {
+    width: 70%;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .bb-video {
+        width: 95%;
+    }
+}
+
 .tnc-padding {
     margin-top: 150px;
     margin-bottom: 101px;

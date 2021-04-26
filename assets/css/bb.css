@@ -296,6 +296,11 @@ footer .form-control {
     padding: 0.7em 1em;
 }
 
+.how-it-works {
+    background-color: #F2EFFF;
+    margin-top: 20px;
+}
+
 .bb-video {
     width: 70%;
 }

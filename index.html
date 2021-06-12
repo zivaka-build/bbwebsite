@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bb-green">
         <a class="navbar-brand pl-3 logo-img" href="#"><img src="./assets/img/bblogo.png" alt="logo"
-                class="logo-img pr-4"><a href="#" class="navbar-brand logo-img" style="text-decoration: none; color : #fff">Breakfast Buddy</a></a>
+                class="logo-img pr-4"></a><a href="#" class="navbar-brand logo-text" style="text-decoration: none; color : #fff">Breakfast Buddy</a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,35 +66,63 @@
                 <img class="section1" src="./assets/img/section1desk.png" />
                 
                 
-                <div  style="position: absolute; top: 470px;" class="col-lg-12 d-none d-lg-block d-xl-block text-right ">
-                    <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="260px"/></button>
-                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="280px"/></button>
+                <div  style="position: absolute; top: 470px;" class="col-lg-12 d-none d-lg-block d-xl-block text-right">
+                    <!--<button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="260px"/></button>
+                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="280px"/></button>-->
+                    <a href="https://api.whatsapp.com/send?phone=919681521288" target="_blank" rel="noopener noreferrer">
+                    <div class="col-3 mt-4 float-right px-0" height="50px" style="background-color: #25D366; border-radius: 20px">
+                        <div class="text-left py-3 pl-4" style="display: flex;">
+                        <img src="./assets/img/whatsapp.png" width="50px"/>
+                        &nbsp;&nbsp;
+                        <h3 class="whatsapp-title pt-2 pl-2">Order on Whatsapp</h3>
+                        </div>
+                    </div>
+                    </a>
                 </div>
                 
                
             
             </div>
-            <div class="container-fluid d-none d-md-block d-lg-none px-0">
+            <div class="container-fluid mb-5 d-none d-md-block d-lg-none px-0">
                 <img class="section1" src="./assets/img/section1desk.png" />
                 
                 
                 <div  style="position: absolute; top: 290px;" class="col-lg-12 text-right ">
-                    <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="180px"/></button>
-                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="200px"/></a></button>
+                    <!--<button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="180px"/></button>
+                    <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="200px"/></a></button>-->
+                    <a href="https://api.whatsapp.com/send?phone=919681521288" target="_blank" rel="noopener noreferrer">
+                        <div class="col-4 mt-4 float-right px-0" height="50px" style="background-color: #25D366; border-radius: 20px">
+                            <div class="text-left py-3 pl-4" style="display: flex;">
+                            <img src="./assets/img/whatsapp.png" width="15%"/>
+                            &nbsp;&nbsp;
+                            <h3 class="whatsapp-title pt-2 pl-2">Order on Whatsapp</h3>
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
-                
-               
-            
+              
             </div>
             <div class="container-fluid d-block d-sm-none px-0 pt-0" >
                 <img class="section1" src="./assets/img/section1.png" />
-                <div class="col-12 text-center">
+                <!--<div class="col-12 text-center">
                     <button class="app-button" onclick="showIos();"><img src="./assets/img/app store.png" width="200px"/></button>
                     
                 </div>
                 <div class="col-12 text-center">
                     <button class="app-button" onclick="showPlaystore();"><img src="./assets/img/google play.png" width="210px"/></a></button>
-                </div>
+                </div>-->
+                <center>
+                <a href="https://api.whatsapp.com/send?phone=919681521288" target="_blank" rel="noopener noreferrer">
+                    <div class="col-10 mt-4 mx-0" height="50px" style="background-color: #25D366; border-radius: 15px">
+                        <div class="text-left py-3 pl-4" style="display: flex;">
+                        <img src="./assets/img/whatsapp.png" width="15%"/>
+                        &nbsp;&nbsp;
+                        <h3 class="whatsapp-title pt-2 pl-2">Order on Whatsapp</h3>
+                        </div>
+                    </div>
+                </a>
+                </center>
             </div>
 
 
@@ -154,9 +182,9 @@
                 <h1 id="Product-heading" class="text-center pb-lg-5 pb-3 pr-2" style="font-family: 'Lobster', cursive;">How It Works</h1>
             </div>
             <center>
-            <video class="bb-video" controls data-aos="zoom-in-up">
-                <source src="./assets/video/bb.mp4"/>
-            </video>
+                
+                    <iframe class="bb-video" src="https://www.youtube.com/embed/vtQ5lAic6to" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </center>
         </section>
 
@@ -183,6 +211,16 @@
                 <!-- End: portfolio heading -->
                 <div class="row justify-content-center">
                     <div class="col-lg-3">
+                        <div class="card special-skill-item Product-list">
+                            <div data-aos="flip-left" class="card-header bg-transparent border-0"><img src="assets\img\MilkVector.png"
+                                    style="height:180px;"></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Milk</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
                             <div class="card-header bg-transparent border-0"><img src="assets\img\DairyProductsVector.png"
                                     style="height: 180px;"></div>
@@ -192,16 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div data-aos="flip-left" class="card special-skill-item Product-list">
-                            <div class="card-header bg-transparent border-0"><img src="assets\img\VeganStoreVector.png"
-                                    style="height:180px;"></div>
-                            <div class="card-body">
-                                <h3 class="card-title">The Vegan Store</h3>
 
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
                             <div class="card-header bg-transparent border-0"><img src="assets\img\BeveragesVector.png"
@@ -214,14 +243,16 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <div class="card special-skill-item Product-list">
-                            <div data-aos="flip-left" class="card-header bg-transparent border-0"><img src="assets\img\MilkVector.png"
+                        <div data-aos="flip-left" class="card special-skill-item Product-list">
+                            <div class="card-header bg-transparent border-0"><img src="assets\img\BreadVector.png"
                                     style="height:180px;"></div>
                             <div class="card-body">
-                                <h3 class="card-title">Milk</h3>
+                                <h3 class="card-title">Bread And Bakery</h3>
+
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
                             <div class="card-header bg-transparent border-0"><img src="assets\img\ReadyToEatVector.png"
@@ -232,16 +263,19 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
-                            <div class="card-header bg-transparent border-0"><img src="assets\img\BreadVector.png"
+                            <div class="card-header bg-transparent border-0"><img src="assets\img\VeganStoreVector.png"
                                     style="height:180px;"></div>
                             <div class="card-body">
-                                <h3 class="card-title">Bread And Bakery</h3>
+                                <h3 class="card-title">The Vegan Store</h3>
 
                             </div>
                         </div>
                     </div>
+                   
+                    
                     <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
                             <div class="card-header bg-transparent border-0"><img src="assets\img\HangoverVector.png"
@@ -252,6 +286,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-3">
                         <div data-aos="flip-left" class="card special-skill-item Product-list">
                             <div class="card-header bg-transparent border-0"><img src="assets\img\EggsVector.png"

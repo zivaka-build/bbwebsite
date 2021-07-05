@@ -58,6 +58,12 @@ color: #460B6F !important;
     align-items: center;
 }
 
+@media (max-width:600px){
+    .logo-img{
+    width: 180px;
+    }
+}
+
 .logo-text{
     font-size: 1.8rem;
     font-family: 'Alatsi', sans-serif !important;

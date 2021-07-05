@@ -24,6 +24,14 @@ body{
     background: #92ED98;
 }
 
+.bb-white {
+    background: #fff;
+}
+
+.fixed-top.scrolled {
+    background-color: #92ED98 !important;
+    transition: background-color 200ms linear;
+  }
 
 .bb-nav{
 font-family: 'Alatsi', sans-serif;
@@ -36,8 +44,13 @@ align-items: center;
 color: #460B6F !important;
 }
 
+.navbar {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+}
+
 .logo-img{
-    width:65px;
+    width: 270px;
     font-family: 'Alatsi', sans-serif !important;
     font-style: normal;
     font-weight:300;

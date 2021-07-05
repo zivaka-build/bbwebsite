@@ -29,14 +29,22 @@
       speedAsDuration: true
     });
   </script>
+  <script>
+      $(function () {
+    $(document).scroll(function () {
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+    });
+  </script>
   
 </head>
 
 <body >
 
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bb-green">
-        <a class="navbar-brand pl-3 logo-img" href="index.html"><img src="./assets/img/bblogo.png" alt="logo"
-                class="logo-img pr-4"></a><a href="index.html" class="navbar-brand logo-text" style="text-decoration: none; color : #fff">Breakfast Buddy</a>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bb-white">
+        <a class="navbar-brand pl-3 logo-img" href="index.html"><img src="./assets/img/bbnewlogo.png" alt="logo"
+                class="logo-img pr-4"></a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
